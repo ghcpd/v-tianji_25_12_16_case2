@@ -1,0 +1,195 @@
+.playlist-manager {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.playlist-manager h2 {
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.create-playlist {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.create-playlist input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease;
+}
+
+.create-playlist input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.create-playlist button {
+  padding: 10px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.create-playlist button:hover {
+  background: #5568d3;
+}
+
+.playlists-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.playlist-item {
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.playlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f8f8f8;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.playlist-header:hover {
+  background: #f0f0f0;
+}
+
+.playlist-info {
+  flex: 1;
+}
+
+.playlist-info h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.track-count {
+  margin: 4px 0 0 0;
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+.playlist-tracks {
+  background: white;
+  border-top: 1px solid #f0f0f0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.playlist-track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s ease;
+}
+
+.playlist-track:last-child {
+  border-bottom: none;
+}
+
+.playlist-track:hover {
+  background: #f8f8f8;
+}
+
+.track-info {
+  flex: 1;
+  cursor: pointer;
+  min-width: 0;
+}
+
+.playlist-track .track-title {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.playlist-track .track-artist {
+  margin: 2px 0 0 0;
+  font-size: 0.8rem;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.track-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+.duration {
+  font-size: 0.8rem;
+  color: #999;
+  white-space: nowrap;
+}
+
+.track-actions button {
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px;
+  transition: color 0.2s ease;
+}
+
+.track-actions button:hover {
+  color: #e74c3c;
+}
+
+.no-tracks {
+  padding: 20px;
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  margin: 0;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+  font-style: italic;
+}
