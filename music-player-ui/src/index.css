@@ -1,0 +1,22 @@
+:root{
+  --bg:#0f1724;--card:#0b1220;--accent:#7c3aed;--muted:#94a3b8;--accent-2:#60a5fa;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,var(--bg),#071027); color:#e6eef8}
+.app{max-width:1100px;margin:40px auto;padding:24px}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.search{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.album-cover{height:140px;border-radius:8px;object-fit:cover;width:100%}
+.album-title{margin-top:10px;font-weight:700}
+.album-artist{color:var(--muted);font-size:13px}
+.track{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-top:1px dashed rgba(255,255,255,0.03)}
+.controls{display:flex;gap:10px;align-items:center}
+.play-btn{background:var(--accent);border:none;color:white;padding:8px 12px;border-radius:8px}
+.small-btn{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:6px;border-radius:8px;color:var(--muted)}
+.player{position:fixed;left:0;right:0;bottom:20px;margin:auto;max-width:1100px;padding:12px;background:linear-gradient(90deg, rgba(7,9,22,0.8), rgba(11,17,34,0.8));border-radius:12px;border:1px solid rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:space-between}
+.playlist{margin-top:20px}
+.playlist h3{margin:0 0 8px 0}
+.like{color:var(--accent-2)}
